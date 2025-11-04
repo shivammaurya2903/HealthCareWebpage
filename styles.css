@@ -173,6 +173,7 @@ header {
     max-width: 500px;
     border-radius: 20px;
     box-shadow: 0 10px 30px rgba(255, 111, 97, 0.2);
+    object-fit: cover;
 }
 
 /* Services Section */
@@ -541,6 +542,10 @@ footer p:last-child {
     padding: 80px 20px;
     max-width: 1200px;
     margin: 0 auto;
+    background: linear-gradient(135deg, #FAF9F6 0%, #FFE5B4 100%);
+    border-radius: 20px;
+    margin: 40px auto;
+    box-shadow: 0 10px 30px rgba(255, 111, 97, 0.1);
 }
 
 .pediatric h2 {
@@ -561,13 +566,28 @@ footer p:last-child {
 .pediatric-content .illustration img {
     width: 100%;
     border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(255, 111, 97, 0.2);
+    transition: transform 0.3s ease;
+    object-fit: cover;
+}
+
+.pediatric-content .illustration img:hover {
+    transform: scale(1.05);
+}
+
+.pediatric-content .tips {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
     box-shadow: 0 8px 25px rgba(255, 111, 97, 0.1);
+    border: 2px solid #FFE5B4;
 }
 
 .pediatric-content .tips h3 {
     color: #4B3832;
     margin-bottom: 1rem;
     font-weight: 600;
+    font-size: 1.5rem;
 }
 
 .pediatric-content .tips ul {
@@ -576,17 +596,30 @@ footer p:last-child {
 }
 
 .pediatric-content .tips ul li {
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
     color: #4B3832;
     opacity: 0.8;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.pediatric-content .tips ul li::before {
+    content: '✓';
+    color: #FF6F61;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
 }
 
 .pediatric-content .tips .fun-fact {
     margin-top: 2rem;
-    padding: 1rem;
-    background: #FFE5B4;
+    padding: 1.5rem;
+    background: linear-gradient(135deg, #FFE5B4, #FF6F61);
+    color: white;
     border-radius: 10px;
-    border-left: 4px solid #FF6F61;
+    border-left: 4px solid #4B3832;
+    font-weight: 500;
+    box-shadow: 0 4px 15px rgba(255, 111, 97, 0.3);
 }
 
 /* Resources Section */
@@ -950,6 +983,8 @@ footer p:last-child {
 }
 
 .appointment input,
+.appointment select,
+.appointment textarea,
 .appointment button {
     width: 100%;
     padding: 12px;
@@ -962,10 +997,17 @@ footer p:last-child {
     font-size: 1rem;
 }
 
-.appointment input:focus {
+.appointment input:focus,
+.appointment select:focus,
+.appointment textarea:focus {
     outline: none;
     border-color: #FF6F61;
     box-shadow: 0 0 0 3px rgba(255, 111, 97, 0.1);
+}
+
+.appointment textarea {
+    resize: vertical;
+    min-height: 100px;
 }
 
 .appointment button {

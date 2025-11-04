@@ -1,29 +1,25 @@
-# TODO List for Healthcare Webpage Main Page Updates
+# TODO List for Healthcare Webpage Fixes
 
-## Existing Sections Updates
-- [x] Update Hero Section: Change tagline to "Compassionate Care for Every Step", CTA button to "Book Appointment"
-- [x] Update Services Section: Change service items to Pediatric Checkups, Mental Wellness, Family Therapy, Nutrition Counseling
-- [x] Repurpose Contact Section to Appointment Form: Update form fields to Name, Email, Phone, Preferred Date/Time; ensure peach borders and coral buttons
+## Navigation Standardization
+- [ ] Update index.html navigation to include: Home, Services, Our Team, About Us, Blog, Appointments, Resources, Contact
+- [ ] Update services.html navigation to match standardized menu
+- [ ] Update resources.html navigation to match standardized menu
+- [ ] Update appointments.html navigation to match standardized menu
+- [ ] Update blog.html navigation to match standardized menu
+- [ ] Update contact.html navigation to match standardized menu
+- [ ] Update about.html navigation to match standardized menu and make it sticky
 
-## New Sections Addition
-- [x] Add Patient Testimonials Section: Carousel or quote cards with patient names, feedback, optional photos/avatars
-- [x] Add Pediatric Corner Section: Child-friendly with illustrations, health tips for parents, fun facts
-- [x] Add Mental Wellness Resources Section: Downloadable guides, breathing exercises, stress management tips
-- [x] Add Health Blog / Articles Section: Grid of articles with thumbnails, previews on topics like parenting, nutrition, etc.
-- [x] Add How It Works / Care Journey Section: Step-by-step timeline (Book → Consult → Diagnose → Treat → Follow-up)
-- [x] Add Video Introduction Section: Embedded video with warm welcome
-- [x] Add Safety & Hygiene Protocols Section: Checklist or icons for sanitization, PPE, child-safe practices
-- [x] Add Accessibility & Language Support Section: Toggles for font size, contrast, language options (English, Hindi)
+## Anchor Link Fixes
+- [ ] Change #team and #services anchor links to page links where sections don't exist (e.g., in blog.html, services.html)
 
-## Navigation and Footer Updates
-- [x] Make Navigation Sticky: Update CSS for sticky navbar
-- [x] Enhance Footer: Add social icons, quick links, ensure copyright
-- [x] Update brand name to "Caring Hearts Healthcare" across all pages
+## Content Fixes
+- [ ] Remove duplicate "resources" and "pediatric" sections in index.html
+- [ ] Update map iframes in contact.html and index.html to show Ghaziabad location
 
-## Styling Updates
-- [x] Update styles.css: Add styles for all new sections, ensure rounded corners, soft shadows, transitions, accessibility (readable contrast, alt tags, semantic HTML), warm colors
+## Footer Updates
+- [ ] Update footer quick links in all pages to match standardized navigation
 
 ## Testing and Verification
-- [x] Test Responsiveness: Open index.html in browser, check layout on different screen sizes
-- [x] Verify Accessibility: Ensure alt tags, semantic HTML, contrast ratios
-- [x] Final Review: Confirm all sections match requirements and design guidelines
+- [ ] Test all navigation links for functionality
+- [ ] Verify map displays correctly
+- [ ] Check for any styling inconsistencies after changes
