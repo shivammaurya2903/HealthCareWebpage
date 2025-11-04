@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthcare Webpage</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>HealthCare Clinic</h1>
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#team">Our Team</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" class="hero">
+            <div class="hero-content">
+                <h2>Your Health, Our Priority</h2>
+                <p>Providing exceptional care with compassion and expertise.</p>
+                <button class="cta-button">Book Appointment</button>
+            </div>
+            <img src="https://source.unsplash.com/featured/?healthcare,medical" alt="Healthcare professionals in action" class="hero-image">
+        </section>
+
+        <section id="services" class="services">
+            <h2>Our Services</h2>
+            <div class="services-grid">
+                <div class="service-item">
+                    <i class="fas fa-stethoscope"></i>
+                    <h3>General Checkups</h3>
+                    <p>Comprehensive health assessments to keep you in top shape.</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-microscope"></i>
+                    <h3>Diagnostics</h3>
+                    <p>Advanced diagnostic tools for accurate and timely results.</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-ambulance"></i>
+                    <h3>Emergency Care</h3>
+                    <p>24/7 emergency services for urgent medical needs.</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-video"></i>
+                    <h3>Telemedicine</h3>
+                    <p>Convenient virtual consultations from the comfort of your home.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="team" class="team">
+            <h2>Meet Our Team</h2>
+            <div class="team-grid">
+                <div class="team-member">
+                    <img src="https://source.unsplash.com/featured/?doctor,woman" alt="Dr. Emily Carter, General Practitioner">
+                    <h3>Dr. Emily Carter</h3>
+                    <p>General Practitioner</p>
+                    <p>With over 10 years of experience, Dr. Carter specializes in family medicine and preventive care.</p>
+                </div>
+                <div class="team-member">
+                    <img src="https://source.unsplash.com/featured/?doctor,man" alt="Dr. Michael Lee, Cardiologist">
+                    <h3>Dr. Michael Lee</h3>
+                    <p>Cardiologist</p>
+                    <p>Expert in heart health, Dr. Lee has helped countless patients manage cardiovascular conditions.</p>
+                </div>
+                <div class="team-member">
+                    <img src="https://source.unsplash.com/featured/?nurse,woman" alt="Nurse Sarah Johnson, Pediatric Nurse">
+                    <h3>Nurse Sarah Johnson</h3>
+                    <p>Pediatric Nurse</p>
+                    <p>Dedicated to children's health, Nurse Johnson provides compassionate care for young patients.</p>
+                </div>
+                <div class="team-member">
+                    <img src="https://source.unsplash.com/featured/?doctor,woman,2" alt="Dr. Lisa Wong, Dermatologist">
+                    <h3>Dr. Lisa Wong</h3>
+                    <p>Dermatologist</p>
+                    <p>Specializing in skin health, Dr. Wong offers treatments for various dermatological conditions.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Contact Us</h2>
+            <div class="contact-content">
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" required></textarea>
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <h3>Clinic Information</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Health St, Medical City, MC 12345</p>
+                    <p><i class="fas fa-phone"></i> (123) 456-7890</p>
+                    <div class="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.241264875!2d-73.98785368459375!3d40.74844097932847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a9b3117469%3A0xd134e199a405a163!2sEmpire%20State%20Building!5e0!3m2!1sen!2sus!4v1623456789012!5m2!1sen!2sus" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 HealthCare Clinic. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
